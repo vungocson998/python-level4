@@ -3,8 +3,11 @@
 - Everyday tasks:
 
 	1	Syntax lesson
+	
 	2	Algorithms and data structure exercises
+	
 	1	OOP exercises
+	
 	1	Major exercises
 
 # Day1: 19/11/2019
