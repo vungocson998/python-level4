@@ -19,3 +19,7 @@
 3 Complete OOP tutorial on Corey Schafer channel
 
 4 Numpy tutorial
+
+# Day2: 20/11/2019
+
+1 Django tutorial
