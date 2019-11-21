@@ -22,4 +22,10 @@
 
 # Day2: 20/11/2019
 
-1 Django tutorial
+Do nothing
+
+# Day3: 21/11/2019
+
+1 Threading and concurrency
+
+2 Multi processing
