@@ -31,3 +31,26 @@
 		Dont use hard code to reference url in navigation bar
 
 		
+4. Admin page
+
+	
+5. Databases and migration
+
+	How to create a db models in python code
+
+	How to see migration sql code:
+
+		python manage.py sqlmigrate <app name> <app number>
+
+	How to run migration to db
+
+	Query database
+		
+		python manage.py shell
+
+	Day formatting to display
+
+	Register database model to admin page
+
+6. User registration
+
