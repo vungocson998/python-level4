@@ -1,0 +1,6 @@
+{% extends "my_blog/base.html" %}
+{% block content %}
+	{% for data in datas %}
+		<h1>{{ data.data }}</h1>
+	{% endfor %}
+{% endblock %}
