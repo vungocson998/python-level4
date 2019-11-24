@@ -69,3 +69,5 @@
 	Check if user are logging in or logging out
 
 8. Degin user profile page
+
+	Use signal to create profile everytime a user is created
