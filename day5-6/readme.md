@@ -54,3 +54,18 @@
 
 6. User registration
 
+	Use form and validation
+
+	csrf token
+
+	Validation
+
+	Use crispy form
+	
+		pip install django-crispy-forms
+
+7. Login/logout system
+
+	Check if user are logging in or logging out
+
+8. Degin user profile page
