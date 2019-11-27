@@ -84,3 +84,13 @@
 	Class-base view and function-base view
 
 11. Pagination 
+
+12. Password reset
+
+	Create password reset template
+
+	Sending email to guide user reset email
+
+	Understand UIDB64 and TOKEN
+
+	Two steps verifiacation gmail
