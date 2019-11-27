@@ -71,3 +71,7 @@
 8. Degin user profile page
 
 	Use signal to create profile everytime a user is created
+
+9. Update User Profile
+
+	
