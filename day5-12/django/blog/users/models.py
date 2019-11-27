@@ -10,8 +10,8 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
     #overide save() method
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
 
         # Resize image
         img = Image.open(self.image.path)
