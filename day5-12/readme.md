@@ -75,3 +75,12 @@
 9. Update User Profile
 
 	
+	Create form for UserUpdate and ProfileUpdate
+
+	Resize avatar to thumbnail
+
+10. Create, Update, and Delete Post
+
+	Class-base view and function-base view
+
+	 
