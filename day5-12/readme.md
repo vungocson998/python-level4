@@ -83,4 +83,4 @@
 
 	Class-base view and function-base view
 
-	 
+11. Pagination 
