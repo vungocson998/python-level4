@@ -113,6 +113,25 @@
 
 	Create requirements.txt
 
+		pip freeze > requirements.txt
+
 	pip install gunicorn
 
+	Set Profile
+
+	Set environment variables
+
+		heroku config:set <var_name>="<value>"	
+	
+	Using PostgreSQL instead of SQLite
+
+		heroku addons
+
+		heroku addons:create heroku-postgresql:hobby-dev
+	
+		heroku run python manage.py migrate
+
+	Run bash shell on heroku
+
+		heroku run bash
 		

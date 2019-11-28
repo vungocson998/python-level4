@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,12 +21,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2+ek$!-78o*v+kzl%%0%f@r)n%$w#&v4^%xxyuwjkrc6#btf&9'
+#SECRET_KEY = '2+ek$!-78o*v+kzl%%0%f@r)n%$w#&v4^%xxyuwjkrc6#btf&9'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True # Set to False on Production
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangoblog-ted.herokuapp.com']
 
 
 # Application definition
@@ -122,8 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Where uploaded file locate
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Where uploaded file locate
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Where uploaded file locate
 MEDIA_URL = '/media/' # How we access media on browser
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -136,10 +139,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-#EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
-EMAIL_HOST_USER = 'vungocson998@gmail.com'
-EMAIL_HOST_PASSWORD = 'pporezklmadrciup'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 # AWS Credentials
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
@@ -150,3 +151,5 @@ AWS_S3_FILE_OVERWRITE = False # Dont upload same name files
 AWS_DEFAULT_ACL = None
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+django_heroku.settings(locals())
