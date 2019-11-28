@@ -94,3 +94,11 @@
 	Understand UIDB64 and TOKEN
 
 	Two steps verifiacation gmail
+
+13. Using AWS S3 for files uploading
+
+	Create IAM user for programmical purpose: access key, secret key
+
+	Using boto3
+
+	Using django-storages

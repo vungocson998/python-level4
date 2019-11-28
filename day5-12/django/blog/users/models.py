@@ -9,16 +9,19 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    #overide save() method
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
+    # RESIZE IMAGES FEARTURE, WHEN IMAGES LOCATE ON LOCAL MACHINE
+    # 
+    # NOW WE USE AWS S3 SO THIS WILL NOT WORK, SHOULD USE LAMBDA 
+    # 
+    #def save(self, *args, **kwargs):
+    #    super().save(*args, **kwargs)
 
-        # Resize image
-        img = Image.open(self.image.path)
-        # Max size allow 300 pixels
-        # If image is larger we will resize it
-        # This is just a simple way
-        if img.height > 300 or img.width > 300:
-            output_size = (300, 300)
-            img.thumbnail(output_size)
-            img.save(self.image.path)
+    #    # Resize image
+    #    img = Image.open(self.image.path)
+    #    # Max size allow 300 pixels
+    #    # If image is larger we will resize it
+    #    # This is just a simple way
+    #    if img.height > 300 or img.width > 300:
+    #        output_size = (300, 300)
+    #        img.thumbnail(output_size)
+    #        img.save(self.image.path)
