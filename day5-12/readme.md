@@ -102,3 +102,17 @@
 	Using boto3
 
 	Using django-storages
+
+14. Deploy to heroku
+
+	Install heroku CLI then login
+
+		sudo snap install --classic heroku
+
+		heroku login
+
+	Create requirements.txt
+
+	pip install gunicorn
+
+		
