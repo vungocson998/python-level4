@@ -34,7 +34,7 @@ Do nothing
 
 Do nothing
 
-# Day5-6-7-8-9-10-11-12: 23/11/2019 - 30/11/2019
+# Day5-6-7-8-9-10: 23/11/2019 - 28/11/2019
 
 Build Django blog to learn:
 
